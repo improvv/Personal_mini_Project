@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>creat</title>
+    <!-- css -->
+    <link rel="stylesheet" href="resources/css/fonts.css">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/comma.css">
+    <link rel="stylesheet" href="resources/css/main.css">
+
+    <!-- JS -->
+    <script src="resources/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.name').click(function () {
+                $('.logout').toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="insta-header">
+        <a href="list.html" class="insta-logo"><img src="./pics/insta logo.png" alt="instagram logo" width: 176px
+                height: 54px></a>
+        <div class="small-prㄴofile">
+            <a href="creat.html" class="plus"><img src="./pics/uploadfeed.png"></a>
+            <img src="./pics/shoes.jpg" class="profile">
+            <p class="name">나이키 님</p>
+            <p class="logout"><a href="login.html">로그아웃</a></p>
+
+        </div>
+    </div>
+    <div class="upload-wrap">
+        <div class="text-wrap">
+            <div class="profile-wrap"><img src="./pics/shoes.jpg" class="profile">
+                <p class="name">nike</p>
+            </div>
+            <!-- 프로필 -->
+            <textarea placeholder="문구 입력..." rows="15" cols="63" class="textarea"></textarea><br> <!-- 텍스트 입력 -->
+        </div>
+        <div class="foot-wrap">
+            <label for="pic" class="upload-file"><img src="./pics/camera.png"><input type="file" id="pic"></label>
+            <!-- 파일 업로드 -->
+            <div class="upbutton">
+                <a href="list.html"><button type="button">취소</button></a> <!-- 글쓰기 취소, mypage로 돌아감 -->
+                <a href="list.html"><button type="submit" class="submit">등록</button></a> <!-- 피드에 등록 -->
+            </div>
+        </div>
+    </div>
+    <footer>@2022 Instagram from Meta</footer>
+
+</body>
+
+</html>

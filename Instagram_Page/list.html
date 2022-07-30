@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>list</title>
+    <!-- css -->
+    <link rel="stylesheet" href="resources/css/fonts.css">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/common.css">
+    <link rel="stylesheet" href="resources/css/main.css">
+
+    <!-- JS -->
+    <script src="resources/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.name').click(function () {
+                $('.logout').toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="insta-header">
+        <a href="list.html"><img class="insta-logo" src="./pics/insta logo.png" alt="instagram logo"></a>
+        <div class="small-profile">
+            <a href="creat.html"><img class="plus" src="./pics/uploadfeed.png"></a>
+            <img src="./pics/shoes.jpg" class="profile">
+            <p class="name">나이키 님</p>
+            <p class="logout"><a href="login.html">로그아웃</a></p>
+        </div>
+        
+    </div>
+    <div class="list-contents">
+        <div class="big-profile-wrap">
+            <img class="big-profile" src="./pics/shoes.jpg">
+            <div class="small-profile-wrap">
+                <p class="big-name">nike</p>
+                <p>게시물 <b>876</b></p>
+            </div>
+
+            <div class="location">
+                <p><b>나이키 더 현대 서울점</b></p>
+                <p>MAKE SPORT A DAILY HABIT</p>
+            </div>
+        </div>
+        <!-- list-pics -->
+        <ul class="shoes-list">
+            <div class="li-wrap">
+                <li class="pics1 shoespic"><img src="./pics/shoes.jpg"><a href="detail.html"><div class="black-mask"></div></a></li>
+                <li class="pics2 shoespic"><img src="./pics/shoes.jpg"><a href="detail.html"><div class="black-mask"></div></a></li>
+                <li class="pics3 shoespic"><img src="./pics/shoes.jpg"><a href="detail.html"><div class="black-mask"></div></a></li>
+                <li class="pics4 shoespic"><img src="./pics/shoes.jpg"><a href="detail.html"><div class="black-mask"></div></a></li>
+                <li class="pics5 shoespic"><img src="./pics/shoes.jpg"><a href="detail.html"><div class="black-mask"></div></a></li>
+                <li class="pics6 shoespic"><img src="./pics/shoes.jpg"><a href="detail.html"><div class="black-mask"></div></a></li>
+            </div>
+        </ul>
+    </div>
+
+    <footer>
+        <p>@2022 Instagram from Meta</p>
+    </footer>
+</body>
+
+</html>

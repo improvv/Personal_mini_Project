@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Instagram join</title>
+    <!-- css -->
+    <link rel="stylesheet" href="resources/css/fonts.css">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/comma.css">
+    <link rel="stylesheet" href="resources/css/main.css">
+
+    <!-- JS -->
+    <script src="resources/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.name').click(function () {
+                $('.logout').toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="insta-header">
+        <a href="list.html" class="insta-logo"><img src="./pics/insta logo.png" alt="instagram logo"></a>
+        <div class="small-profile">
+            <a href="creat.html" class="plus"><img src="./pics/uploadfeed.png"></a>
+            <img src="./pics/shoes.jpg" class="profile">
+            <p class="name">나이키 님</p>
+            <p class="logout"><a href="login.html">로그아웃</a></p>
+
+        </div>
+    </div>
+    <header class="upload-wrap">
+        <div class="profile-wrap"><img src="./pics/shoes.jpg" class="profile">
+            <p class="name">nike</p>
+        </div>
+        <p class="edit-text">
+            곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다. 곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될
+            글입니다.곧
+            수정될 글입니다.곧 수정될 글입니다. 곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.
+        </p>
+        <img src="./pics/shoes.jpg" width="100%" height="100%">
+
+        <div class="foot-wrap">
+            <label for="pic" class="upload-file"><img src="./pics/camera.png"><input type="file" id="pic"></label>
+            <!-- 파일 업로드 -->
+            <div class="up-button">
+                <a href="list.html"><button type="button">취소</button></a> <!-- 글수정 취소 -->
+                <a href="list.html"><button type="button" class="delete">삭제</button></a> <!-- 글삭제 -->
+                <a href="list.html"><button type="submit" class="submit">등록</button></a> <!-- 수정 내용을 피드에 등록 -->
+            </div>
+        </div>
+    </header>
+
+
+
+    <footer>@2022 Instagram from Meta</footer>
+
+</body>
+
+</html>

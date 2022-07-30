@@ -1,0 +1,220 @@
+@charset "utf-8";
+*:focus {
+    outline: none !important;
+}
+
+ol, ul, li { list-style:none; }
+
+/* login page */
+body {background-color: #fafafa;}
+
+.wrap {width: 400px;margin: 0 auto;opacity: 0; animation: fadeInup 1s forwards;position: relative;top: 100px;}
+
+.main-insta-logo{margin-bottom: 10px;}
+
+.login-wrap.join-wrap { background-color: #ffffff; margin: 60px auto 10px auto; padding: 25px; border: 0.5px solid #dddddd; text-align: center;}
+
+.login-wrap .input-wrap {margin-bottom: 15px; margin-top: 21px;}
+
+.input-wrap input { width: 90%; background-color: #fafafa; border: 0.5px solid #dddddd; padding: 10px 0 10px 5px;}
+
+.login-button { display: block; background: #0095f6; margin: 0 auto; margin-bottom: 25px; padding: 8px; color: white; font-size: smaller; width: 90%; border-radius:2.5px;}
+
+.botton-box { background-color: white; border: 0.5px solid #dddddd; padding: 20px; text-align: center; font-size: small;}
+
+.botton-box a {color: #0095f6}
+
+
+footer { text-align: center; font-size: small; margin-top: 40px; margin-bottom: 40px; color: #8e8e8e;}
+
+/* apply main animation(all page) */
+@keyframes fadeInup {  0% {opacity: 0; top: 100px;} 100% {opacity: 1; top: 0;} }
+
+/* //login page */
+
+/* join page add */
+
+.memo p{ color: #777; font-size: 14px; margin-top: -6px;}
+
+.input-lable { display: flex; justify-content: center; align-items: center; width: 100px; height: 100px; border-radius: 100%; border: 1px solid #dddddd; background-color: #fafafa; margin: 37px auto 0 auto;}
+/* //join page add */
+
+/* 반응형 만들기 */
+@media (max-width:400px) {.wrap,.footer {width: 100%;} .login-wrap .img-wrap img { margin-bottom: 30px; display: block; width: 100%; }}
+
+/* //반응형 */
+
+/* creat */
+
+/* instagram header */
+.insta-header { background-color: white; width: 100%; padding: 10px; border-bottom: 0.5px solid #ddd; margin-bottom: 30px;}
+
+.insta-logo { margin-left: 10%;}
+
+.small-profile .plus { margin-right: 8px;}
+
+.small-profile { float: right; margin: 15px 10%;}
+/* //instagram header */
+
+.upload-wrap { width: 500px; margin: 0 auto; background-color: #fafafa; padding: 0 20px 0 20px; opacity: 0; animation: fadeInup 1s forwards; position: relative; top: 100px;}
+
+.text-wrap { border: 0.5px; background-color: #ffffff; padding: 10px; margin-top: 15px;}
+
+.textarea { border: white; padding: 10px; resize: none;}
+
+.profile-wrap { display: block; padding: 10px; margin-top: 10px; margin-bottom: 5px;}
+
+.profile { border-radius: 100%; width: 25px; height: 25px;}
+
+.name { display: inline-block; font-size: smaller; position: relative;}
+
+.logout{ border-radius: 3px; border: 0.5px solid #8e8e8e; padding-left:10px ; padding-top: 3px; background-color: white; font-size:11px; font-weight: lighter; width: 110px; height: 25px; position: absolute; top: 60px; right: 105px; display: none;}
+
+/* select file, buttons */
+.foot-wrap { padding: 10px; background-color: #ffffff; border-top: 0.5px solid #ddd; margin-top: 10px;}
+
+.foot-wrap .upbutton { margin-left: 76%; margin-top: -30px;}
+
+.foot-wrap .upbutton button { width: 50px; height: 37px; border-radius: 5px; border: solid white; font-size: smaller;}
+
+/* 버튼 사라짐 */
+input::file-selector-button {display: none;}
+
+.upload-file { color: gray;}
+
+.upload-file input { font-size: small; margin-left: 32px; margin-top: -20px;}
+
+.foot-wrap .upbutton .submit { background-color: #0095f6; color: white;}
+/* //select file, buttons */
+
+@media (max-width: 500px) {.upload-wrap,.footer { width: 100%; } .insta-header .insta-logo img { margin-left: 10%; width: 100%; }}
+
+/* //creat */
+
+/* edit page */
+.edit-text { font-size: 9pt; color: grey; margin-top: -12px; line-height: 18px;}
+
+.up-button { margin-left: 64%; margin-top: -31px;}
+
+.foot-wrap .up-button button { width: 50px; height: 37px; border-radius: 5px; border: solid white; font-size: smaller;}
+
+.foot-wrap .up-button .submit { background-color: #0095f6; color: white;}
+
+.foot-wrap .up-button .delete { background-color: #ea0000; color: white;}
+
+/* //edit page */
+
+/* list */
+
+
+.list-contents { width: 70%; margin: 20px auto 55px auto; background-color: white; padding: 10px 10px 20px 10px;}
+
+.big-profile-wrap { display: flex; align-items: center; margin-bottom: 20px; position: relative;}
+
+.small-profile-wrap { position: absolute; top: 35px; left: 170px;}
+
+.location { position: absolute; bottom: 25px; left: 170px;}
+
+.location p{ font-size: 12px; line-height: 1.5;}
+
+.big-profile { width: 130px; height: 130px; border-radius: 100%; margin: 20px;}
+
+.big-name { font-size: 19pt; padding-bottom: 7px;}
+
+.header:after { content: ""; display: block; clear: both;}
+
+.li-wrap li{ float: left; width: calc((100% - 60px)/3); margin: 10px; opacity: 0; animation: inorder 1.5s forwards; position: relative; bottom: 20px;}
+
+/* black-mask */
+  .li-wrap li:hover .black-mask{ width: 100%; height: 100%; background-color: rgba(25, 25, 25, 0.306); position: absolute; top: 0; left: 0; display: block;} 
+/* //black-mask */
+
+.shoes-list::after{ content: ""; display: block; clear: both;}
+
+@media (max-width : 780px) {.li-wrap li {width: calc((100% - 40px) / 2);}}
+
+@media (max-width : 480px) {.li-wrap li {width: 100%;}}
+
+@keyframes inorder{0%{opacity: 0; bottom: 0px;}100%{opacity: 1; bottom: 20px;}}
+
+.li-wrap .pics1{animation-delay: 0s;}
+
+.li-wrap .pics2{animation-delay: 0.25s;}
+
+.li-wrap .pics3{animation-delay: 0.5s;}
+
+.li-wrap .pics4{animation-delay: 0.75s;}
+
+.li-wrap .pics5{animation-delay: 1s;}
+
+.li-wrap .pics6{animation-delay: 1.25s;}
+/* //list */
+
+/* detail */
+.detail-wrap{display: flex; justify-content: center; align-items: center; animation: fadeInup 1s forwards; position: relative; top: 100px;}
+
+.big-img img{ width: 600px;height: 600px; margin: 0 auto;}
+
+.side-wrap{ width: 300px; height: 600px;}
+
+.side-top{ padding: 10px; border: 0.5px solid #dddddd; height: 7%; font-weight: bolder; font-size: 14px; position: relative;}
+
+.side-top .side-dot{ position: absolute; right: 10px; top: 9px;}
+
+.side-mid{ padding: 10px; border: 0.5px solid #dddddd; height: 86%; font-size: 12px; position: relative;}
+
+.reply-wrap { margin: 20px 0 20px 0; position: relative;}
+
+.side-mid .reply{margin:-24px 10px 15px 40px;}
+
+.reply-btn{ margin: 13px 0; padding-left: 34px;}
+
+.reply-btn button{ border: 0; background: none; font-size: smaller; color: #777;}
+
+.show-reply{ position: relative; padding-left: 70px; font-size: smaller; color: #777;}
+
+.show-reply:after{ content: ""; display: block;  width: 20px; height: 1.2px;background-color: #777; position: absolute; top: 6px; left: 42px;}
+
+.show-reply.moving:after{ animation: anim 1s infinite;}
+
+@keyframes anim{0%{opacity: 0; left: 42px; width: 0;}100%{opacity: 1; left: 47px; width: 20px;}}
+
+.show-reply a{color: #777;text-decoration: none;}
+
+.hidden-reply{ margin: 15px 0 0 40px; display: none;}
+
+/* 좋아요 */
+.like-wrap{position: absolute;bottom: 3%;}
+
+.ico{ display: inline-block; background: url("../images/like.png") no-repeat; width: 24px; height: 24px; vertical-align: middle;}
+
+.like.redlike .ico{ background: url("../images/like-hover.png") no-repeat; position: relative; top: 0; animation: like-move 0.5s forwards;}
+
+@keyframes like-move{ 0%{opacity: 0; top: 5px;} 100%{opacity: 1; top: 0;}}
+
+.like b{color: black;}
+/* //좋아요 */
+
+.side-bottom{ padding: 10px; border: 0.5px solid #dddddd; height: 7%;}
+
+.focus-here{ border: 0; font-size: 13px; width: 200px; background-color: #fafafa;}
+
+.replied{ border: 0; color: #0095f6; border: 0; background: none; font-size: 13px;}
+/* hidden list */
+
+.hidden-wrap{ position: absolute; top: 31%; left:32%}
+
+.delete a{color: red !important;}
+
+.hidden-wrap ul li{ width: 300px; background-color: white; border-bottom: 0.1px solid #a1a1a1; text-align: center; padding: 10px;}
+
+.black-mask{width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.573); position: fixed; top: 0; left: 0; display: none;}
+
+.list1{display: none; position: fixed; z-index: 9; animation: list-up 0.7s forwards;}
+
+.list2{display: none;position: fixed; z-index: 9; animation: list-up 0.7s forwards;}
+
+@keyframes list-up{ 0%{opacity: 0; top:39%;} 100%{opacity: 1; top:31%;}}
+
+/* //hidden list */
+/* //detail */

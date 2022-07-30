@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Detail</title>
+    <!-- css -->
+    <link rel="stylesheet" href="resources/css/fonts.css">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <!--     <link rel="stylesheet" href="resources/css/common.css">
+     -->
+    <link rel="stylesheet" href="resources/css/main.css">
+
+    <!-- JS -->
+    <script src="resources/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            const bm = $('.black-mask');
+            $('.name').click(function () {
+                $('.logout').toggle();
+            });
+            //좋아요
+            $('.like').click(function () {
+                $(this).toggleClass('redlike');
+            });
+            $('.auto-focus').click(function () {
+                $('.focus-here').focus();
+            });
+            // 답글보기
+            $('.show-reply').click(function () {
+                $('.hidden-reply').toggle();
+            });
+            $('.show-reply').hover(function () {
+                $(this).toggleClass('moving');
+            });
+            //숨겨진창
+            $('.side-dot').click(function(){
+                $('.list1').show();
+                bm.show();
+            });
+            $('.cancle').click(function(){
+                $('.list1').hide();
+                $('.list2').hide();
+                bm.hide();
+            });
+            $('.secdot').click(function(){
+                $('.list2').show();
+                bm.show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="insta-header">
+        <a href="list.html"><img class="insta-logo" src="./pics/insta logo.png" alt="instagram logo"></a>
+        <div class="small-profile">
+            <a href="creat.html"><img class="plus" src="./pics/uploadfeed.png"></a>
+            <img src="./pics/shoes.jpg" class="profile">
+            <p class="name">나이키 님</p>
+            <p class="logout"><a href="login.html">로그아웃</a></p>
+        </div>
+    </div>
+    <!-- //header -->
+
+    <div class="detail-wrap">
+        <div class="big-img"><img src="./resources/images/sample.jpg" alt="nike_shoes"></div>
+        <div class="side-wrap">
+            <div class="side-top">
+                <img class="profile" src="./resources/images/sample.jpg" alt="profile"> nike
+                <div class="side-dot"><a href="#"><img src="./resources/images/dot.png"></a></div>
+            </div>
+            <div class="side-mid">
+                <div class="reply-wrap">
+                    <img class="profile" src="./resources/images/sample.jpg">
+                    <div class="reply"><b>nike</b>나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키</div>
+                </div>
+                <div class="reply-btn">
+                    <button type="button" class="auto-focus">답글달기</button> <a class="secdot" href="#"><img
+                            src="./resources/images/dot.png"></a>
+                </div>
+                <div class="show-reply">
+                    <a href="javascript:void(0);">답글보기(2개)</a>
+                </div>
+
+                <!-- 답글보기 2개 -->
+                <div class="hidden-reply">
+                    <div class="reply-wrap">
+                        <img class="profile" src="./resources/images/sample.jpg">
+                        <div class="reply"><b>nike</b>나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키</div>
+                    </div>
+                    <div class="reply-btn">
+                        <button type="button" class="auto-focus">답글달기</button> <a class="secdot" href="#"><img
+                                src="./resources/images/dot.png"></a>
+                    </div>
+                    <div class="reply-wrap">
+                        <img class="profile" src="./resources/images/sample.jpg">
+                        <div class="reply"><b>nike</b>나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키</div>
+                    </div>
+                    <div class="reply-btn">
+                        <button type="button" class="auto-focus">답글달기</button> <a class="secdot" href="#"><img
+                                src="./resources/images/dot.png"></a>
+                    </div>
+                </div>
+                <!-- //답글보기 2개 -->
+                <!-- 좋아요 -->
+                <div class="like-wrap">
+                    <a href="javascript:void(0);" class="like">
+                        <span class="ico"></span> <b>좋아요1개</b>
+                    </a>
+                </div>
+                <!-- //좋아요 -->
+            </div>
+            <div class="side-bottom">
+                <img src="./resources/images/comment.png">
+                <input type="text" class="focus-here" placeholder="댓글 달기..">
+                <button type="button" class="replied">게시</button>
+            </div>
+        </div>
+    </div>
+    <!-- hidden list -->
+    <div class="hidden-wrap">
+        <div class="black-mask"></div>
+        <ul class="hidden-list list1">
+            <li class="delete"><a href="./list.html">삭제</a></li>
+            <li><a href="./edit.html">수정</a></li>
+            <li class="cancle"><a href="#">취소</a></li>
+        </ul>
+        <ul class="hidden-list list2">
+            <li class="cancle delete"><a href="#">삭제</a></li>
+            <li class="cancle"><a href="#">취소</a></li>
+        </ul>
+    </div>
+    <!-- //hidden list -->
+    <footer>
+        <p>@2022 Instagram from Meta</p>
+    </footer>
+
+</body>
+
+</html>
